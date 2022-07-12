@@ -4,6 +4,12 @@ Console.WriteLine("Введите число b: ");
 int b = Convert.ToInt32(Console.ReadLine());
 int max = 0;
 int min = 0;
+if (a == b)
+
+{
+    Console.WriteLine("Числа равны!");
+}
+    
 if (a<b)
 {
     max = b;
@@ -11,14 +17,10 @@ if (a<b)
     min = a;
     Console.WriteLine("Минимальное число = " + min);
 }
-else
+if (a>b)
 {
     max = a;
     Console.WriteLine("Максимальное число = " + max);
     min = b;
     Console.WriteLine("Минимальное число = " + min);
-}
-if (a == b)
-{
-    Console.WriteLine("Числа равны!");
 }
